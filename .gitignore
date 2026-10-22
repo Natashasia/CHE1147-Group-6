@@ -1,1 +1,5 @@
 .DS_Store
+
+# Ignore generated HTML EDA reports
+tox21_eda_report*.html
+tox21_eda_report*.html.gz
