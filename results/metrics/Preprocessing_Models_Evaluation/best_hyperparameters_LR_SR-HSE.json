@@ -1,0 +1,83 @@
+{
+  "assay": "SR-HSE",
+  "model": "LR",
+  "best_params": {
+    "model__C": 0.01,
+    "model__class_weight": null
+  },
+  "mean_cv_ap": 0.26922277466147637,
+  "selected_features": [
+    "VSA_EState10",
+    "fr_C_S",
+    "PEOE_VSA14",
+    "MolLogP",
+    "VSA_EState1",
+    "SlogP_VSA5",
+    "VSA_EState7",
+    "fr_thiocyan",
+    "fr_Ar_OH",
+    "fr_Imine",
+    "fr_hdrzine",
+    "BCUT2D_LOGPHI",
+    "fr_term_acetylene",
+    "fr_piperzine",
+    "fr_azo",
+    "EState_VSA3",
+    "fr_Ndealkylation2",
+    "fr_furan",
+    "SMR_VSA9",
+    "Chi1n",
+    "EState_VSA11"
+  ],
+  "selected_feature_count": 21,
+  "sfs_fixed_lr_c": 1.0,
+  "sfs_fixed_lr_class_weight": null,
+  "sfs_max_features": 30,
+  "sfs_improvement_threshold": 0.001,
+  "screen_removed_reasons": {
+    "all_missing": [],
+    "constant_or_single_observed_value": [
+      "SMR_VSA8",
+      "SlogP_VSA9",
+      "fr_diazo",
+      "fr_isothiocyan"
+    ],
+    "numerically_extreme": [
+      "Ipc"
+    ],
+    "high_correlation": [
+      "MaxEStateIndex",
+      "HeavyAtomMolWt",
+      "ExactMolWt",
+      "NumValenceElectrons",
+      "FpDensityMorgan2",
+      "Chi0",
+      "Chi0n",
+      "Chi0v",
+      "Chi1",
+      "Chi1v",
+      "Chi2n",
+      "Chi3n",
+      "Chi3v",
+      "Chi4n",
+      "LabuteASA",
+      "SlogP_VSA6",
+      "HeavyAtomCount",
+      "NOCount",
+      "NumAromaticCarbocycles",
+      "NumHDonors",
+      "NumSaturatedCarbocycles",
+      "NumSaturatedHeterocycles",
+      "NumSaturatedRings",
+      "MolMR",
+      "fr_Al_OH_noTert",
+      "fr_COO",
+      "fr_COO2",
+      "fr_Nhpyrrole",
+      "fr_amide",
+      "fr_phenol",
+      "fr_phenol_noOrthoHbond"
+    ]
+  },
+  "run_mode": "full"
+}

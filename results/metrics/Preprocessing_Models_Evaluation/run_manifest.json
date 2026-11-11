@@ -1,0 +1,84 @@
+{
+  "description": "CHE1147 Tox21 Notebook 02 model-selection configuration",
+  "input": "data/processed/tox21_clean.csv",
+  "run_mode": "full",
+  "assays": [
+    "SR-ARE",
+    "SR-ATAD5",
+    "SR-HSE",
+    "SR-MMP",
+    "SR-p53"
+  ],
+  "random_seed": 42,
+  "cv_folds": 5,
+  "scaffold_method": "Bemis-Murcko with per-canonical-SMILES acyclic fallback",
+  "duplicate_policy": "keep_first_in_notebook_01",
+  "primary_tuning_metric": "average_precision",
+  "secondary_metrics": [
+    "trapezoidal_pr_auc",
+    "roc_auc",
+    "accuracy",
+    "precision",
+    "recall",
+    "f1"
+  ],
+  "correlation_threshold": 0.9,
+  "numerical_safety_max_abs": 1000000000000.0,
+  "sfs_fixed_lr_c": 1.0,
+  "sfs_fixed_lr_class_weight": null,
+  "sfs_max_features": 30,
+  "sfs_min_improvement": 0.001,
+  "lr_grid": {
+    "model__C": [
+      0.001,
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "model__class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "rf_grid": {
+    "model__n_estimators": [
+      200,
+      400,
+      600
+    ],
+    "model__max_depth": [
+      null,
+      8,
+      16,
+      32
+    ],
+    "model__min_samples_split": [
+      2,
+      5,
+      10
+    ],
+    "model__min_samples_leaf": [
+      1,
+      2,
+      5,
+      10
+    ],
+    "model__max_features": [
+      "sqrt",
+      0.5,
+      0.8
+    ],
+    "model__class_weight": [
+      null,
+      "balanced_subsample"
+    ]
+  },
+  "lr_combinations_production": 12,
+  "rf_combinations_production": 864,
+  "scikit_learn_version": "1.7.2",
+  "rdkit_version": "2026.03.6",
+  "python_version": "3.10.21",
+  "figure_type": "png"
+}

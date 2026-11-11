@@ -1,0 +1,43 @@
+model,descriptor,SR-ARE,SR-ATAD5,SR-HSE,SR-MMP,SR-p53,assay_count,assay_fraction,appears_in_assays
+LR,fr_Ar_OH,1,0,1,1,0,3,0.6,SR-ARE; SR-HSE; SR-MMP
+LR,FractionCSP3,0,1,0,0,1,2,0.4,SR-ATAD5; SR-p53
+LR,HallKierAlpha,1,0,0,0,1,2,0.4,SR-ARE; SR-p53
+LR,MolLogP,0,1,1,0,0,2,0.4,SR-ATAD5; SR-HSE
+LR,VSA_EState1,0,0,1,1,0,2,0.4,SR-HSE; SR-MMP
+LR,VSA_EState10,1,0,1,0,0,2,0.4,SR-ARE; SR-HSE
+LR,fr_COO,0,0,0,1,1,2,0.4,SR-MMP; SR-p53
+LR,BCUT2D_LOGPHI,0,0,1,0,0,1,0.2,SR-HSE
+LR,BCUT2D_MWLOW,0,0,0,0,1,1,0.2,SR-p53
+LR,BertzCT,0,0,0,1,0,1,0.2,SR-MMP
+LR,EState_VSA11,0,1,0,0,0,1,0.2,SR-ATAD5
+LR,EState_VSA3,0,1,0,0,0,1,0.2,SR-ATAD5
+LR,EState_VSA9,0,0,0,0,1,1,0.2,SR-p53
+LR,FpDensityMorgan1,0,0,0,1,0,1,0.2,SR-MMP
+LR,MolWt,0,0,0,1,0,1,0.2,SR-MMP
+LR,NumAliphaticCarbocycles,1,0,0,0,0,1,0.2,SR-ARE
+LR,NumAromaticCarbocycles,1,0,0,0,0,1,0.2,SR-ARE
+LR,NumHeterocycles,0,1,0,0,0,1,0.2,SR-ATAD5
+LR,PEOE_VSA14,0,0,1,0,0,1,0.2,SR-HSE
+LR,RingCount,0,0,0,0,1,1,0.2,SR-p53
+LR,SMR_VSA3,0,0,0,1,0,1,0.2,SR-MMP
+LR,SMR_VSA6,0,0,0,1,0,1,0.2,SR-MMP
+LR,SMR_VSA7,0,1,0,0,0,1,0.2,SR-ATAD5
+LR,SPS,1,0,0,0,0,1,0.2,SR-ARE
+LR,SlogP_VSA10,0,0,0,1,0,1,0.2,SR-MMP
+LR,SlogP_VSA5,0,0,1,0,0,1,0.2,SR-HSE
+LR,SlogP_VSA8,1,0,0,0,0,1,0.2,SR-ARE
+LR,TPSA,0,0,0,1,0,1,0.2,SR-MMP
+LR,VSA_EState7,0,0,1,0,0,1,0.2,SR-HSE
+LR,fr_Al_COO,0,1,0,0,0,1,0.2,SR-ATAD5
+LR,fr_Ar_COO,1,0,0,0,0,1,0.2,SR-ARE
+LR,fr_C_S,0,0,1,0,0,1,0.2,SR-HSE
+LR,fr_Imine,0,0,1,0,0,1,0.2,SR-HSE
+LR,fr_NH2,0,0,0,0,1,1,0.2,SR-p53
+LR,fr_Ndealkylation1,1,0,0,0,0,1,0.2,SR-ARE
+LR,fr_amidine,0,1,0,0,0,1,0.2,SR-ATAD5
+LR,fr_aniline,0,0,0,0,1,1,0.2,SR-p53
+LR,fr_epoxide,0,1,0,0,0,1,0.2,SR-ATAD5
+LR,fr_nitro,1,0,0,0,0,1,0.2,SR-ARE
+LR,fr_piperdine,0,0,0,0,1,1,0.2,SR-p53
+LR,fr_quatN,0,0,0,0,1,1,0.2,SR-p53
+LR,fr_thiophene,0,1,0,0,0,1,0.2,SR-ATAD5

@@ -1,0 +1,6 @@
+assay,model_a,model_b,n_shared,n_union,jaccard,shared_descriptors
+SR-ARE,LR,RF,0,20,0.0,
+SR-ATAD5,LR,RF,1,19,0.05263157894736842,MolLogP
+SR-HSE,LR,RF,4,16,0.25,MolLogP; PEOE_VSA14; VSA_EState10; fr_C_S
+SR-MMP,LR,RF,2,18,0.1111111111111111,BertzCT; FpDensityMorgan1
+SR-p53,LR,RF,1,19,0.05263157894736842,EState_VSA9

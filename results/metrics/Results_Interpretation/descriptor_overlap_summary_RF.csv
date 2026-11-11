@@ -1,0 +1,6 @@
+model,k_assays,n_unique_descriptors,n_exactly_k,pct_unique_exactly_k,n_at_least_k,pct_unique_at_least_k
+RF,1,39,30,76.92307692307693,39,100.0
+RF,2,39,8,20.51282051282051,9,23.076923076923077
+RF,3,39,0,0.0,1,2.564102564102564
+RF,4,39,1,2.564102564102564,1,2.564102564102564
+RF,5,39,0,0.0,0,0.0

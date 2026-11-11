@@ -1,0 +1,2 @@
+assay,model,n_test,n_test_positive,train_prevalence,test_prevalence,ap,trapezoidal_pr_auc,roc_auc,accuracy,precision,recall,f1,threshold,run_mode
+SR-HSE,LR,2569,120,0.05365980724146913,0.04671078240560529,0.1704345519223045,0.16587496436928365,0.7543095821423711,0.9517321915142078,0.25,0.016666666666666666,0.03125,0.5,full

@@ -1,0 +1,2 @@
+assay,model,n_test,n_test_positive,train_prevalence,test_prevalence,ap,trapezoidal_pr_auc,roc_auc,accuracy,precision,recall,f1,threshold,run_mode
+SR-MMP,RF,891,129,0.15674603174603174,0.1447811447811448,0.6799769074365725,0.6789276219752519,0.8918238417872185,0.8900112233445566,0.6220472440944882,0.6124031007751938,0.6171875,0.5,full

@@ -1,0 +1,2 @@
+assay,model,n_test,n_test_positive,train_prevalence,test_prevalence,ap,trapezoidal_pr_auc,roc_auc,accuracy,precision,recall,f1,threshold,run_mode
+SR-ATAD5,Dummy,1173,42,0.03312014618547282,0.03580562659846547,0.03580562659846547,0.5179028132992327,0.5,0.9641943734015346,0.0,0.0,0.0,0.5,full

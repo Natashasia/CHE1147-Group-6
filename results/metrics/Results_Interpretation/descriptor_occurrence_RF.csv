@@ -1,0 +1,40 @@
+model,descriptor,SR-ARE,SR-ATAD5,SR-HSE,SR-MMP,SR-p53,assay_count,assay_fraction,appears_in_assays
+RF,MolLogP,1,1,1,1,0,4,0.8,SR-ARE; SR-ATAD5; SR-HSE; SR-MMP
+RF,BCUT2D_LOGPHI,1,0,0,1,0,2,0.4,SR-ARE; SR-MMP
+RF,BertzCT,0,1,0,1,0,2,0.4,SR-ATAD5; SR-MMP
+RF,FractionCSP3,1,0,0,1,0,2,0.4,SR-ARE; SR-MMP
+RF,HeavyAtomMolWt,0,1,0,0,1,2,0.4,SR-ATAD5; SR-p53
+RF,SMR_VSA5,1,1,0,0,0,2,0.4,SR-ARE; SR-ATAD5
+RF,SMR_VSA7,1,0,0,1,0,2,0.4,SR-ARE; SR-MMP
+RF,SlogP_VSA2,1,0,0,1,0,2,0.4,SR-ARE; SR-MMP
+RF,SlogP_VSA6,1,0,1,0,0,2,0.4,SR-ARE; SR-HSE
+RF,AvgIpc,0,0,0,0,1,1,0.2,SR-p53
+RF,BalabanJ,0,1,0,0,0,1,0.2,SR-ATAD5
+RF,EState_VSA6,0,0,0,0,1,1,0.2,SR-p53
+RF,EState_VSA9,0,0,0,0,1,1,0.2,SR-p53
+RF,ExactMolWt,0,0,0,0,1,1,0.2,SR-p53
+RF,FpDensityMorgan1,0,0,0,1,0,1,0.2,SR-MMP
+RF,HallKierAlpha,0,1,0,0,0,1,0.2,SR-ATAD5
+RF,Kappa1,0,1,0,0,0,1,0.2,SR-ATAD5
+RF,MaxAbsPartialCharge,1,0,0,0,0,1,0.2,SR-ARE
+RF,MaxEStateIndex,0,0,0,0,1,1,0.2,SR-p53
+RF,MinPartialCharge,0,0,1,0,0,1,0.2,SR-HSE
+RF,MolMR,0,0,0,1,0,1,0.2,SR-MMP
+RF,MolWt,0,0,0,0,1,1,0.2,SR-p53
+RF,PEOE_VSA14,0,0,1,0,0,1,0.2,SR-HSE
+RF,PEOE_VSA9,0,0,0,0,1,1,0.2,SR-p53
+RF,SMR_VSA10,0,1,0,0,0,1,0.2,SR-ATAD5
+RF,SMR_VSA6,1,0,0,0,0,1,0.2,SR-ARE
+RF,SPS,0,1,0,0,0,1,0.2,SR-ATAD5
+RF,SlogP_VSA4,0,1,0,0,0,1,0.2,SR-ATAD5
+RF,VSA_EState10,0,0,1,0,0,1,0.2,SR-HSE
+RF,VSA_EState3,0,0,0,1,0,1,0.2,SR-MMP
+RF,VSA_EState6,0,0,0,0,1,1,0.2,SR-p53
+RF,VSA_EState8,0,0,0,0,1,1,0.2,SR-p53
+RF,fr_Al_COO,0,0,0,1,0,1,0.2,SR-MMP
+RF,fr_C_S,0,0,1,0,0,1,0.2,SR-HSE
+RF,fr_allylic_oxid,0,0,1,0,0,1,0.2,SR-HSE
+RF,fr_epoxide,0,0,1,0,0,1,0.2,SR-HSE
+RF,fr_phenol,0,0,1,0,0,1,0.2,SR-HSE
+RF,fr_phenol_noOrthoHbond,0,0,1,0,0,1,0.2,SR-HSE
+RF,qed,1,0,0,0,0,1,0.2,SR-ARE
