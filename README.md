@@ -113,13 +113,23 @@ The `--locked` flag checks that the lockfile is consistent with the project conf
 
 For VS Code, choose the repository's `.venv` Python interpreter as the Jupyter kernel.
 
-### 3. Start JupyterLab
+### 3. Configure VS Code
+
+1. Open the repository folder in VS Code.
+2. Ensure the Python and Jupyter extensions are installed.
+3. Open any .ipynb notebook.
+4. Click Select Kernel and choose the repository's .venv Python environment.
+
+### Optional: Using JupyterLab
+
+If JupyterLab is installed in the project environment, launch it using:
 
 ```bash
 uv run jupyter lab
 ```
 
-The main analysis uses RDKit, pandas, NumPy, matplotlib, seaborn, scikit-learn, SciPy, joblib, and Jupyter-related packages. Refer to `pyproject.toml` and `uv.lock` for the authoritative installed package versions; a package should not be assumed installed merely because it is named here.
+JupyterLab is optional and is not required when using VS Code.
+
 
 ## Reproducing the analysis
 
