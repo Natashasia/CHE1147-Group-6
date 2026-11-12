@@ -37,8 +37,8 @@ The final analysis is organized into three sequential Jupyter notebooks:
 ### Modeling and evaluation
 
 - **Baseline:** `DummyClassifier(strategy="prior")`, providing an assay-specific no-skill reference.
-- **Logistic Regression (LR):** Training-fold descriptor screening; remove highly correlated features (absolute Pearson correlation > 0.90); sequential forward selection (SFS), with a maximum of 30 selected features and minimum mean CV AP improvement of **0.001** in the latest run. Model regularization and class weights are selected by grid search.
-- **Random Forest (RF):** Training-fold descriptor screening without LR's correlation filter. The latest saved run sampled **100 parameter combinations per assay** using `RandomizedSearchCV` from the declared RF search space.
+- **Logistic Regression (LR):** Training-fold descriptor screening; remove highly correlated features (absolute Pearson correlation > 0.90); sequential forward selection (SFS), with a maximum of 30 selected features and minimum mean CV AP improvement of 0.001 in the latest run. Model regularization and class weights are selected by grid search.
+- **Random Forest (RF):** Training-fold descriptor screening without LR's correlation filter. The latest saved run sampled 100 parameter combinations per assay using `RandomizedSearchCV` from the declared RF search space.
 - **Splitting:** Assay-specific held-out test sets and five-fold, scaffold-aware training cross-validation, using Bemis–Murcko-based groups. Test scaffolds are excluded from the corresponding training set.
 - **Primary selection metric:** Average Precision (AP), appropriate for the imbalanced activity labels. Additional metrics include ROC-AUC, trapezoidal PR-AUC, precision, recall, F1 and accuracy.
 - **Binary predictions:** A fixed 0.5 decision threshold is used for the reported confusion matrices. AP and ROC-AUC are based on prediction scores across thresholds.
@@ -52,7 +52,7 @@ Descriptor screening and SFS occur inside the training/CV workflow to avoid vali
 3. **Across assays:** Compare each model's top-10 descriptor sets using pairwise Jaccard similarity (10 unique assay pairs), a descriptor-by-assay occurrence table, and summary counts of descriptors found in exactly or at least 1–5 assays.
 4. **Across models:** Compare the LR and RF top-10 sets within each assay using Jaccard similarity.
 
-LR coefficients and RF permutation scores have different meanings and units; their **descriptor identities**, not raw importance values, are compared across models. Shared predictive descriptors do not establish shared causal biological mechanisms.
+LR coefficients and RF permutation scores have different meanings and units; their descriptor identities, not raw importance values, are compared across models. Shared predictive descriptors do not establish shared causal biological mechanisms.
 
 ## Repository organization
 
@@ -163,7 +163,7 @@ Run the final notebooks **in the following order** from the cloned repository:
 ## Reproducibility and limitations
 
 - Set and document random seeds (latest run: `42`). Scaffold-aware partitions and CV folds are recorded in the exported diagnostic files.
-- Review `run_manifest.json`, the actual `cv_results_*.csv`, and the executable notebook together. **The supplied run manifest lists the complete 864-combination RF search space, while the saved RF CV results show 100 sampled configurations per assay.** Update the manifest to explicitly record `RandomizedSearchCV(n_iter=100)` for complete provenance.
+- Review `run_manifest.json`, the actual `cv_results_*.csv`, and the executable notebook together. The supplied run manifest lists the complete 864-combination RF search space, while the saved RF CV results show 100 sampled configurations per assay. Update the manifest to explicitly record `RandomizedSearchCV(n_iter=100)` for complete provenance.
 - Missing assay labels, small positive classes, and scaffold shifts can affect test performance and precision-recall metrics.
 - The default 0.5 decision threshold may have low recall for rare active molecules; it is not optimized for safety-critical screening.
 - Permutation importance may distribute importance across correlated descriptors. Importance rankings and their overlap are descriptive measures of model dependence, not demonstrations of causality or statistically significant common mechanisms.
