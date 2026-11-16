@@ -12,7 +12,7 @@
   "random_seed": 42,
   "cv_folds": 5,
   "scaffold_method": "Bemis-Murcko with per-canonical-SMILES acyclic fallback",
-  "duplicate_policy": "keep_first_in_notebook_01",
+  "duplicate_policy": "majority_vote_ties_nan_in_notebook_01",
   "primary_tuning_metric": "average_precision",
   "secondary_metrics": [
     "trapezoidal_pr_auc",

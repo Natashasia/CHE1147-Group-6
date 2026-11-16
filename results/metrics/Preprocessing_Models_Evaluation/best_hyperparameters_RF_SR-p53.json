@@ -3,13 +3,13 @@
   "model": "RF",
   "best_params": {
     "model__n_estimators": 400,
-    "model__min_samples_split": 5,
-    "model__min_samples_leaf": 1,
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 2,
     "model__max_features": "sqrt",
-    "model__max_depth": 32,
+    "model__max_depth": null,
     "model__class_weight": "balanced_subsample"
   },
-  "mean_cv_ap": 0.3018911793646145,
+  "mean_cv_ap": 0.33610983175981,
   "selected_features": [
     "MaxAbsEStateIndex",
     "MaxEStateIndex",

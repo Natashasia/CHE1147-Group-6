@@ -4,35 +4,35 @@ Raw SDF path: data/raw/tox21_10k_data_all.sdf
 SDF-converted CSV: data/processed/tox21_10k_data_all.csv
 Original records: 11,761
 Invalid or missing canonical structures: 0
-Duplicate canonical structure rows removed (keep first): 3,720
+Extra duplicate structure rows consolidated: 3,720
 Unique canonical structures retained: 8,041
 RDKit descriptors generated: 217
 Descriptors with any missing/non-finite entries: 12
 Missing/non-finite descriptor entries: 4,662 (0.267%)
 Constant descriptors: 3 (SMR_VSA8, SlogP_VSA9, fr_diazo)
-Descriptor pairs with |Pearson r| > 0.90: 156
+Descriptor pairs with |Pearson r| > 0.90: 143
 
 Label summary (deduplicated):
           Total  Labeled  Missing  Missing (%)  Inactive  Active  Active of labeled (%)
 Assay                                                                                  
-SR-ARE     8041     5611     2430         30.2      4764     847                   15.1
-SR-ATAD5   8041     5551     2490         31.0      5364     187                    3.4
-SR-HSE     8041     6408     1633         20.3      6082     326                    5.1
-SR-MMP     8041     4419     3622         45.0      3737     682                   15.4
-SR-p53     8041     5227     2814         35.0      4946     281                    5.4
+SR-ARE     8041     5914     2127         26.5      4994     920                   15.6
+SR-ATAD5   8041     7234      807         10.0      6988     246                    3.4
+SR-HSE     8041     6578     1463         18.2      6240     338                    5.1
+SR-MMP     8041     5912     2129         26.5      5001     911                   15.4
+SR-p53     8041     6911     1130         14.1      6498     413                    6.0
 
 Assay co-occurrence (jointly observed labels only):
  Assay_A  Assay_B  Jointly_labeled_n  both_inactive_00  A_inactive_B_active_01  A_active_B_inactive_10  both_active_11  A_active_pct  B_active_pct  both_active_pct  expected_both_active_pct_if_independent   phi  enrichment_ratio
-  SR-ARE SR-ATAD5               3732              3184                      24                     457              67        14.041         2.438            1.795                                    0.342 0.271              5.24
-  SR-ARE   SR-HSE               5277              4528                      64                     572             113        12.981         3.354            2.141                                    0.435 0.282              4.92
-  SR-ARE   SR-MMP               2969              2465                     118                     190             196        13.001        10.576            6.602                                    1.375 0.505              4.80
-  SR-ARE   SR-p53               3583              3134                      26                     348              75        11.806         2.819            2.093                                    0.333 0.330              6.29
-SR-ATAD5   SR-HSE               4167              3897                     158                      81              31         2.688         4.536            0.744                                    0.122 0.185              6.10
-SR-ATAD5   SR-MMP               4246              3659                     492                      42              53         2.237        12.836            1.248                                    0.287 0.194              4.35
-SR-ATAD5   SR-p53               5097              4804                     156                      75              62         2.688         4.277            1.216                                    0.115 0.337             10.58
-  SR-HSE   SR-MMP               3284              2820                     321                      70              73         4.354        11.998            2.223                                    0.522 0.256              4.25
-  SR-HSE   SR-p53               4023              3802                      68                      92              61         3.803         3.207            1.516                                    0.122 0.414             12.43
-  SR-MMP   SR-p53               4056              3584                      63                     314              95        10.084         3.895            2.342                                    0.393 0.335              5.96
+  SR-ARE SR-ATAD5               5398              4582                      45                     679              92        14.283         2.538            1.704                                    0.363 0.244              4.70
+  SR-ARE   SR-HSE               5591              4767                      63                     631             130        13.611         3.452            2.325                                    0.470 0.296              4.95
+  SR-ARE   SR-MMP               4471              3636                     234                     318             283        13.442        11.563            6.330                                    1.554 0.438              4.07
+  SR-ARE   SR-p53               5230              4500                      60                     525             145        12.811         3.920            2.772                                    0.502 0.350              5.52
+SR-ATAD5   SR-HSE               5947              5559                     220                     125              43         2.825         4.422            0.723                                    0.125 0.176              5.79
+SR-ATAD5   SR-MMP               5711              4887                     674                      64              86         2.627        13.308            1.506                                    0.350 0.213              4.31
+SR-ATAD5   SR-p53               6741              6299                     248                     104              90         2.878         5.014            1.335                                    0.144 0.326              9.25
+  SR-HSE   SR-MMP               4859              4148                     506                      86             119         4.219        12.863            2.449                                    0.543 0.283              4.51
+  SR-HSE   SR-p53               5789              5414                     160                     114             101         3.714         4.509            1.745                                    0.167 0.402             10.42
+  SR-MMP   SR-p53               5509              4794                     103                     449             163        11.109         4.828            2.959                                    0.536 0.360              5.52
 
 IQR outlier statistics:
             Valid_n       Q1       Q3      IQR  Lower_1p5_IQR  Upper_1p5_IQR  Potential_outliers_n  Potential_outliers_pct
@@ -43,28 +43,28 @@ TPSA           8041   26.300   80.260   53.960        -54.640        161.200    
 
 Top 20 descriptor–endpoint correlations:
                         SR-ARE  SR-ATAD5  SR-HSE  SR-MMP  SR-p53
-fr_benzene               0.175     0.114   0.072   0.349   0.168
-NumAromaticCarbocycles   0.175     0.115   0.071   0.348   0.169
-NumAromaticRings         0.204     0.129   0.076   0.320   0.191
-SMR_VSA7                 0.195     0.111   0.084   0.320   0.149
-SlogP_VSA6               0.191     0.112   0.087   0.290   0.125
-VSA_EState6              0.142     0.103   0.064   0.283   0.111
-MolLogP                  0.141     0.039   0.112   0.273   0.067
-BCUT2D_LOGPHI            0.158     0.050   0.076   0.272   0.154
-fr_Ar_OH                 0.130     0.081   0.065   0.259   0.123
-fr_phenol                0.133     0.083   0.068   0.259   0.128
-fr_phenol_noOrthoHbond   0.136     0.083   0.071   0.259   0.126
-SMR_VSA9                 0.153     0.111   0.035   0.233   0.143
-BertzCT                  0.198     0.087   0.054   0.227   0.195
-FpDensityMorgan1        -0.142    -0.076  -0.083  -0.222  -0.099
-SlogP_VSA11              0.114     0.076   0.031   0.218   0.120
-AvgIpc                   0.179     0.066   0.050   0.209   0.146
-FractionCSP3            -0.149    -0.118  -0.070  -0.207  -0.106
-MolMR                    0.164     0.054   0.072   0.206   0.160
-PEOE_VSA7                0.095     0.030   0.059   0.205   0.124
-Chi3v                    0.164     0.053   0.115   0.203   0.159
+NumAromaticCarbocycles   0.175     0.091   0.084   0.325   0.153
+fr_benzene               0.174     0.089   0.085   0.325   0.153
+SMR_VSA7                 0.199     0.093   0.097   0.293   0.134
+NumAromaticRings         0.203     0.114   0.086   0.283   0.178
+SlogP_VSA6               0.195     0.093   0.097   0.269   0.114
+MolLogP                  0.141     0.036   0.126   0.267   0.069
+VSA_EState6              0.138     0.084   0.072   0.260   0.097
+fr_phenol_noOrthoHbond   0.127     0.056   0.094   0.254   0.134
+fr_phenol                0.126     0.055   0.091   0.252   0.133
+fr_Ar_OH                 0.124     0.053   0.087   0.252   0.130
+BCUT2D_LOGPHI            0.170     0.039   0.099   0.247   0.142
+FpDensityMorgan1        -0.141    -0.063  -0.096  -0.225  -0.090
+SMR_VSA9                 0.154     0.082   0.053   0.223   0.129
+BertzCT                  0.202     0.071   0.065   0.213   0.173
+RingCount                0.186     0.080   0.061   0.209   0.174
+SlogP_VSA11              0.117     0.049   0.050   0.205   0.109
+PEOE_VSA7                0.107     0.010   0.076   0.197   0.099
+FractionCSP3            -0.154    -0.115  -0.074  -0.195  -0.113
+MolMR                    0.170     0.039   0.084   0.191   0.134
+PEOE_VSA6                0.078    -0.010   0.072   0.186   0.018
 
 NOTES:
-- Duplicate structures retain FIRST observation; reconcile before final ML if needed.
+- Duplicate assay labels consolidated by majority vote; ties assigned NaN.
 - Missing assay labels remain missing and are filtered PER ASSAY in Notebook 02.
 - EDA descriptors are not used to fit global preprocessing or select ML features.

@@ -2,14 +2,14 @@
   "assay": "SR-MMP",
   "model": "RF",
   "best_params": {
-    "model__n_estimators": 400,
-    "model__min_samples_split": 10,
-    "model__min_samples_leaf": 5,
-    "model__max_features": 0.8,
-    "model__max_depth": null,
-    "model__class_weight": "balanced_subsample"
+    "model__n_estimators": 600,
+    "model__min_samples_split": 5,
+    "model__min_samples_leaf": 2,
+    "model__max_features": "sqrt",
+    "model__max_depth": 32,
+    "model__class_weight": null
   },
-  "mean_cv_ap": 0.7572086833561034,
+  "mean_cv_ap": 0.7200553533503405,
   "selected_features": [
     "MaxAbsEStateIndex",
     "MaxEStateIndex",
@@ -171,6 +171,7 @@
     "fr_amidine",
     "fr_aniline",
     "fr_aryl_methyl",
+    "fr_azide",
     "fr_azo",
     "fr_barbitur",
     "fr_benzene",
@@ -229,7 +230,6 @@
     "constant_or_single_observed_value": [
       "SMR_VSA8",
       "SlogP_VSA9",
-      "fr_azide",
       "fr_diazo"
     ],
     "numerically_extreme": [

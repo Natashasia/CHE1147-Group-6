@@ -3,13 +3,13 @@
   "model": "RF",
   "best_params": {
     "model__n_estimators": 600,
-    "model__min_samples_split": 5,
-    "model__min_samples_leaf": 2,
-    "model__max_features": 0.5,
-    "model__max_depth": 16,
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 1,
+    "model__max_features": "sqrt",
+    "model__max_depth": 32,
     "model__class_weight": null
   },
-  "mean_cv_ap": 0.3801267083820559,
+  "mean_cv_ap": 0.36389088199199926,
   "selected_features": [
     "MaxAbsEStateIndex",
     "MaxEStateIndex",
@@ -189,6 +189,7 @@
     "fr_imidazole",
     "fr_imide",
     "fr_isocyan",
+    "fr_isothiocyan",
     "fr_ketone",
     "fr_ketone_Topliss",
     "fr_lactam",
@@ -229,8 +230,7 @@
     "constant_or_single_observed_value": [
       "SMR_VSA8",
       "SlogP_VSA9",
-      "fr_diazo",
-      "fr_isothiocyan"
+      "fr_diazo"
     ],
     "numerically_extreme": [
       "Ipc"

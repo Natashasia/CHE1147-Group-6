@@ -1,0 +1,6 @@
+Assay,Missing under keep-first,Measurements discarded by keep-first,Labels recovered by merging,Conflicting molecules,Ties assigned NaN,Missing after merging
+SR-ARE,2430,347,345,50,44,2127
+SR-ATAD5,2490,1703,1701,24,20,807
+SR-HSE,1633,207,207,42,37,1463
+SR-MMP,3622,1521,1512,35,28,2129
+SR-p53,2814,1702,1695,20,18,1130
