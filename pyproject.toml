@@ -17,6 +17,7 @@ dependencies = [
     "rdkit>=2026.9.1",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
+    "shap>=0.49.1",
 ]
 
 [tool.uv]
