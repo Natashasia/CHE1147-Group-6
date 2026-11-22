@@ -9,7 +9,7 @@
     "model__max_depth": null,
     "model__class_weight": "balanced_subsample"
   },
-  "mean_cv_ap": 0.4851500055449015,
+  "mean_cv_ap": 0.48629122376292494,
   "selected_features": [
     "MaxAbsEStateIndex",
     "MaxEStateIndex",

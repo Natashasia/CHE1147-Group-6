@@ -5,7 +5,7 @@
     "model__C": 100,
     "model__class_weight": null
   },
-  "mean_cv_ap": 0.29391977373787925,
+  "mean_cv_ap": 0.2963819261690288,
   "selected_features": [
     "BCUT2D_MWHI",
     "fr_nitro",

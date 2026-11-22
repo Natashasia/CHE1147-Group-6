@@ -1,6 +1,6 @@
 {
   "description": "CHE1147 Tox21 Notebook 02 model-selection configuration",
-  "input": "data/processed/tox21_clean.csv",
+  "input": "data\\processed\\tox21_clean.csv",
   "run_mode": "full",
   "assays": [
     "SR-ARE",

@@ -1,7 +1,7 @@
 CHE1147 — Tox21 EDA SUMMARY
 ===========================
-Raw SDF path: data/raw/tox21_10k_data_all.sdf
-SDF-converted CSV: data/processed/tox21_10k_data_all.csv
+Raw SDF path: data\raw\tox21_10k_data_all.sdf
+SDF-converted CSV: data\processed\tox21_10k_data_all.csv
 Original records: 11,761
 Invalid or missing canonical structures: 0
 Duplicate canonical structure rows removed (keep first): 3,720
