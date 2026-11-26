@@ -123,7 +123,7 @@ For VS Code, choose the repository's `.venv` Python interpreter as the Jupyter k
 
 ### Optional: Using JupyterLab
 
-Notebook 03 also requires the `shap` package for its supplementary SHAP analysis. The current notebook includes a `%pip install shap` cell; for a fully reproducible locked environment, declare `shap` in `pyproject.toml` and update `uv.lock` rather than relying on an unpinned installation at runtime.
+SHAP is included in the project's locked environment and is used for supplementary Random Forest interpretation in Notebook 03.
 
 If JupyterLab is installed in the project environment, launch it using:
 
